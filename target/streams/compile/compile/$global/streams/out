@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/sdevCA/app/views/listProjects.scala.html:73:14: value getDepartment is not a member of models.projects.Project[0m
+[0m[[0m[31merror[0m] [0m[0m						<td>@p.getDepartment</td>[0m
+[0m[[0m[31merror[0m] [0m[0m						       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/sdevCA/app/views/projectAdmin/listProjects.scala.html:55:13: value getDepartment is not a member of models.projects.Project[0m
+[0m[[0m[31merror[0m] [0m[0m					<td>@p.getDepartment</td>[0m
+[0m[[0m[31merror[0m] [0m[0m					       ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
