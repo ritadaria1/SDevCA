@@ -22,7 +22,7 @@ create table projects (
   name                          varchar(255),
   department_id                 bigint,
   description                   varchar(255),
-  start_date                    varchar(255),
+  start_date                    date,
   constraint pk_projects primary key (id)
 );
 

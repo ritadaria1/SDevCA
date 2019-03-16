@@ -42,7 +42,7 @@
             <td>@p.getName</td>
             <td>@p.getDepartment.getName</td>        
             <td>@p.getDescription</td>
-            <td>@p.getStartDate</td>
+            <td>@p.getStartDateString</td>
             @if((user != null) && ("manager".equals(user.getRole()))){
             <td>
               <a href="@routes.HomeController.updateProjects(p.getId)" class="button xs btn-danger">

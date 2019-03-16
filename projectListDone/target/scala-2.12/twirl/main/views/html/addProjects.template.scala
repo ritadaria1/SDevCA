@@ -48,7 +48,7 @@ Seq[Any](format.raw/*1.64*/("""
             '_showConstraints -> false, 'class -> "form-control"
         )),format.raw/*17.10*/("""
         """),_display_(/*18.10*/inputText(projectsForm("description"), '_label -> "Description", 'class -> "form-control")),format.raw/*18.100*/("""
-        """),_display_(/*19.10*/inputText(projectsForm("startDate"), '_label -> "Start Date", 'class -> "form-control")),format.raw/*19.97*/("""
+        """),_display_(/*19.10*/inputDate(projectsForm("startDate"), args = 'size -> 10, '_label -> "Start Date", 'class -> "form-control")),format.raw/*19.117*/("""
 
         """),_display_(/*21.10*/inputText(projectsForm("id"), '_label -> "", 'hidden -> "hidden")),format.raw/*21.75*/("""
 
@@ -75,10 +75,10 @@ Seq[Any](format.raw/*1.64*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Mar 16 18:21:35 GMT 2019
+                  DATE: Sat Mar 16 19:33:38 GMT 2019
                   SOURCE: /home/wdd/BASE_CODE/projectListDone/app/views/addProjects.scala.html
-                  HASH: e42ebb70156996282badd8b283ce518aba5367d1
-                  MATRIX: 987->1|1122->65|1167->63|1194->81|1221->83|1254->108|1293->110|1324->115|1392->158|1509->267|1548->269|1584->306|1620->316|1632->320|1662->330|1700->341|1797->417|1834->427|2100->672|2137->682|2249->772|2286->782|2394->869|2432->880|2518->945|2555->955|2712->1085|2727->1091|2772->1115|2920->1233
+                  HASH: 6ea706ab37e3df9f9edc1f42e135f13cf15c7522
+                  MATRIX: 987->1|1122->65|1167->63|1194->81|1221->83|1254->108|1293->110|1324->115|1392->158|1509->267|1548->269|1584->306|1620->316|1632->320|1662->330|1700->341|1797->417|1834->427|2100->672|2137->682|2249->772|2286->782|2415->889|2453->900|2539->965|2576->975|2733->1105|2748->1111|2793->1135|2941->1253
                   LINES: 28->1|31->2|34->1|35->3|36->4|36->4|36->4|37->5|38->6|39->7|39->7|40->8|41->9|41->9|41->9|43->11|43->11|44->12|49->17|50->18|50->18|51->19|51->19|53->21|53->21|55->23|57->25|57->25|57->25|61->29
                   -- GENERATED --
               */

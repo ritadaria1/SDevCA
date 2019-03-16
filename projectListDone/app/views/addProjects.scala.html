@@ -16,7 +16,7 @@
             '_showConstraints -> false, 'class -> "form-control"
         )
         @inputText(projectsForm("description"), '_label -> "Description", 'class -> "form-control")
-        @inputText(projectsForm("startDate"), '_label -> "Start Date", 'class -> "form-control")
+        @inputDate(projectsForm("startDate"), args = 'size -> 10, '_label -> "Start Date", 'class -> "form-control")
 
         @inputText(projectsForm("id"), '_label -> "", 'hidden -> "hidden")
 

@@ -85,12 +85,12 @@ public class HomeController extends Controller {
 
             if (newProjects.getId() == null) {
                 newProjects.save();    
-                flash("success", "Projects " + newProjects.getName() + " was added");
+                flash("success", "Project "+newProjects.getId()+" for " + newProjects.getName() + " was added");
                 
             }
             else if (newProjects.getId() != null) {
                 newProjects.update();
-                flash("success", "Projects " + newProjects.getName() + " was updated");
+                flash("success", "Project "+newProjects.getId()+" for " + newProjects.getName() + " was updated");
             }
         }
 

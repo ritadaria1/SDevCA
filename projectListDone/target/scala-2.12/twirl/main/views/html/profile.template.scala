@@ -63,7 +63,7 @@ Seq[Any](format.raw/*1.27*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Mar 16 18:21:35 GMT 2019
+                  DATE: Sat Mar 16 19:33:38 GMT 2019
                   SOURCE: /home/wdd/BASE_CODE/projectListDone/app/views/profile.scala.html
                   HASH: d8f02416d48b7518f1100d571fb7d04c5d0dceda
                   MATRIX: 961->1|1081->26|1108->28|1140->52|1178->53|1209->58|1356->179|1368->183|1398->193|1527->295|1540->299|1572->310

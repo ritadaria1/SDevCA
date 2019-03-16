@@ -24,7 +24,8 @@ public class Projects extends Model {
         private String description; 
 
         @Constraints.Required
-        private String startDate; 
+        @Temporal(TemporalType.DATE)
+        private Date startDate; 
         
 
         public static final Finder<Long, Projects> find = new Finder<>(Projects.class);
@@ -38,7 +39,7 @@ public class Projects extends Model {
         }
     
         // Constructor to initialise object
-        public Projects(Long id, String name, String description, String startDate) {
+        public Projects(Long id, String name, String description, Date startDate) {
             this.id = id;
             this.name = name;
             this.description = description;
@@ -74,10 +75,13 @@ public class Projects extends Model {
             this.description = description; 
         } 
 
-        public String getStartDate() { 
+        public String getStartDateString() { 
+            return String.format("%1$td %1$tB %1$tY", startDate); 
+        } 
+        public Date getStartDate() { 
             return startDate; 
         } 
-        public void setStartDate(String startDate) { 
+        public void setStartDate(Date startDate) { 
             this.startDate = startDate; 
         } 
          
