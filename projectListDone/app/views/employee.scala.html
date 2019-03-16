@@ -1,0 +1,58 @@
+@(employee: List[models.Employee], user: models.users.User, env: play.api.Environment)
+
+@main("Employee",user) {
+
+<p class="lead">Employee List</p>
+
+@if(flash.containsKey("success")) {
+  <div class="alert alert-success">
+    @flash.get("success")
+  </div>
+}
+
+<table class="table table-bordered table-hover table-condensed">
+
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Update</th>
+      <th>Delete</th>     
+    </tr>
+  </thead>
+
+  <tbody>
+    @for(e<-employee) {
+      <tr>
+        @if(env.resource("public/images/employeeImages/" + e.getId + "thumb.jpg").isDefined){
+          <td><img src="/assets/images/employeeImages/@(e.getId +"thumb.jpg")"/></td>
+        }else{
+          <td><img src="/assets/images/employeeImages/noImage.png"></td>
+        }
+        <td class="numeric">@e.getId</td>
+        <td>@e.getName</td>
+        <td>@e.getEmail</td>
+        <td>
+          <a href="@routes.HomeController.updateEmployee(e.getId)" class="button-xs btn-danger">
+            <span class="glyphicon glyphicon-pencil"></span>
+          </a>
+        </td>  
+        <td>
+          <a href="@routes.HomeController.deleteEmployee(e.getId)" class="button-xs btn-danger"  onclick="return confirmDel()">
+            <span class="glyphicon glyphicon-trash"></span>
+          </a>
+        </td>
+      </tr>
+    }
+  </tbody>
+
+</table>
+<p>
+  <a href="@routes.HomeController.addEmployee()">
+    <button class="btn btn-primary">Add an Employee</button>
+  </a>
+</p>
+
+}
