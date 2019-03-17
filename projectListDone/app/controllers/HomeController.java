@@ -63,8 +63,8 @@ public class HomeController extends Controller {
     }
 
     public Result profile() {
-        List<Employee> employeeList = Employee.findAll();
-        return ok(employee.render(employeeList,User.getUserById(session().get("email")), e));
+        User user = User.getUserById(session().get("email"));
+        return ok(profile.render(user,User.getUserById(session().get("email")), e));
     }
 
     @Security.Authenticated(Secured.class)
